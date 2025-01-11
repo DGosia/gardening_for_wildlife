@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        .base-input {
+            @apply border border-gray-300 rounded-md p-3 shadow-sm focus:ring focus:ring-green-300;
+        }
+        .base-label {
+            @apply text-gray-800 font-medium;
+        }
+        .form-input-group {
+            @apply flex flex-col gap-2;
+        }
+        .section-title {
+            @apply text-4xl font-bold mb-8 text-[#5e6c44];
+        }
+        .tips {
+            @apply bg-green-50 p-6 rounded-lg shadow-md border border-green-200 mb-4;
+        }
+        .button-primary {
+            @apply bg-green-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-green-500 transition-all;
+        }
+        .hero {
+            @apply bg-gradient-to-r from-green-100 via-white to-green-100 py-20 text-center;
+        }
+        .hero-title {
+            @apply text-5xl font-extrabold text-gray-800 mb-4;
+        }
+        .hero-subtitle {
+            @apply text-xl text-gray-600;
+        }
+        .card {
+            @apply bg-white rounded-lg shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-all;
+        }
+        .card-title {
+            @apply text-2xl font-bold text-[#5e6c44] mb-4;
+        }
+    </style>
+    <title>Gardening for Wildlife in the UK</title>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <header class="relative">
+        <!-- Navigation Bar -->
+        <nav class="bg-[#5e6c44] text-white py-4" aria-label="Main Navigation">
+            <div class="container mx-auto flex justify-between items-center px-4">
+                <!-- Navigation Links -->
+                <ul class="flex gap-6 text-lg">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="about.html" class="hover:underline">About</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- Full-Width Background with Title -->
+        <div class="relative h-72" aria-label="Wildlife friendly garden with greenery">
+            <img src="images/wildlife_garden.jpg" alt="Wildlife Friendly Garden" class="absolute inset-0 w-full h-full object-cover">
+        </div>
+
+    </header>
+
+    <!-- Logo Section -->
+    <div class="absolute top-40 left-1/2 transform -translate-x-1/2 z-10">
+        <a href="index.html">
+            <img src="images/wildlife_garden_logo.jpg" alt="Gardening for Wildlife Logo" class="h-64 w-64 rounded-full shadow-lg">
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero bg-green-50 py-10" aria-labelledby="hero-title">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="hero-title text-green-700">Transform Your Garden</h2>
+            <p class="hero-subtitle text-gray-700">Create a haven for wildlife with our expert tips and guides.</p>
+        </div>
+    </section>
+
+    <section id="meadow" class="py-12" aria-labelledby="meadow-title">
+        <div class="container mx-auto grid md:grid-cols-2 gap-8 px-4">
+            <!-- Wildflower Meadow Image -->
+            <div>
+                <img src="images/wildflower_meadow.jpg" alt="Wildflower Meadow" class="rounded-lg shadow-md">
+            </div>
+            <!-- Wildflower Meadow Text -->
+            <div class="card">
+                <h3 class="card-title">Grow a Wildflower Meadow</h3>
+                <p class="text-gray-700">Wildflower meadows provide a habitat for butterflies, bees, and other pollinators. They are easy to maintain and add vibrant beauty to your garden.</p>
+                <ul class="list-disc list-inside mt-4 text-gray-700">
+                    <li>Choose a sunny spot in your garden.</li>
+                    <li>Prepare the soil by removing existing grass and weeds.</li>
+                    <li>Sow a mix of native wildflower seeds suitable for the UK.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="pond" class="py-12 bg-green-50" aria-labelledby="pond-title">
+        <div class="container mx-auto grid md:grid-cols-2 gap-8 px-4">
+            <!-- Wildlife Pond Image -->
+            <div>
+                <img src="images/wildlife_pond.jpg" alt="Wildlife Pond" class="rounded-lg shadow-md">
+            </div>
+            <!-- Wildlife Pond Text -->
+            <div class="card">
+                <h3 class="card-title">Create a Pond for Wildlife</h3>
+                <p class="text-gray-700">A pond attracts frogs, newts, dragonflies, and provides drinking water for birds and mammals. It also supports aquatic plants and insects.</p>
+                <ul class="list-disc list-inside mt-4 text-gray-700">
+                    <li>Choose a spot with partial sunlight.</li>
+                    <li>Dig a hole with varying depths for different species.</li>
+                    <li>Line it with pond liner and fill with rainwater.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="species" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Discover Native Species</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Red Fox -->
+                <div class="card">
+                    <img src="images/red_fox.jpg" alt="Red Fox" class="rounded-lg shadow-md mb-4">
+                    <h3 class="card-title">Red Fox</h3>
+                    <p class="text-gray-700">The red fox is one of the UK's most iconic species. It is adaptable and can thrive in both rural and urban environments.</p>
+                </div>
+                <!-- European Hedgehog -->
+                <div class="card">
+                    <img src="images/european_hedgehog.jpg" alt="European Hedgehog" class="rounded-lg shadow-md mb-4">
+                    <h3 class="card-title">European Hedgehog</h3>
+                    <p class="text-gray-700">Hedgehogs are vital for gardens as they eat slugs and insects. Provide a safe space with leaves and logs for shelter.</p>
+                </div>
+                <!-- Barn Owl -->
+                <div class="card">
+                    <img src="images/barn_owl.jpg" alt="Barn Owl" class="rounded-lg shadow-md mb-4">
+                    <h3 class="card-title">Barn Owl</h3>
+                    <p class="text-gray-700">Known for its distinctive heart-shaped face, the barn owl is often seen hunting in open fields at dusk.</p>
+                </div>
+                <!-- Common Frog -->
+                <div class="card">
+                    <img src="images/common_frog.jpg" alt="Common Frog" class="rounded-lg shadow-md mb-4">
+                    <h3 class="card-title">Common Frog</h3>
+                    <p class="text-gray-700">Frogs are a gardener's friend, eating pests like slugs. A small pond can provide them with a perfect habitat.</p>
+                </div>
+                <!-- Bumblebee -->
+                <div class="card">
+                    <img src="images/bumble_bee.jpg" alt="Bumblebee" class="rounded-lg shadow-md mb-4">
+                    <h3 class="card-title">Bumblebee</h3>
+                    <p class="text-gray-700">Essential pollinators, bumblebees thrive in gardens with a variety of flowers that bloom throughout the seasons.</p>
+                </div>
+                <!-- Pipistrelle Bat -->
+                <div class="card">
+                    <img src="images/pipistrelle_bat.jpg" alt="Pipistrelle Bat" class="rounded-lg shadow-md mb-4">
+                    <h3 class="card-title">Pipistrelle Bat</h3>
+                    <p class="text-gray-700">These small bats feed on insects at night and can be encouraged with bat boxes and night-scented flowers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="signup" class="py-12 bg-green-50">
+        <div class="container mx-auto flex justify-center items-center px-4">
+            <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+                <h2 class="section-title text-center text-green-700">Sign Up for Updates</h2>
+                <form action="#" method="post" class="grid grid-cols-1 gap-6">
+                    <div class="form-input-group">
+                        <label for="email" class="base-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="base-input" required>
+                    </div>
+                    <button type="submit" class="button-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-100 py-6" aria-label="Footer">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Gardening for Wildlife. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
