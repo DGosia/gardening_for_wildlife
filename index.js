@@ -35,8 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
     // FAQ Accordion functionality
     const faqItems = document.querySelectorAll(".accordion-title");
